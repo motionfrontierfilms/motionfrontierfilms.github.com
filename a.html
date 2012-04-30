@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Motion Frontier Films</title>
+    <style>
+      body {
+        background: black;
+        color: white;
+        width: 600px;
+        margin: 0 auto;
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Georgia'
+      }
+      h1 {
+        padding-bottom: 30px;
+      }
+      #face { 
+        position: relative;
+      }
+      #mouth {
+        position: absolute;
+        top: 642px;
+        left: 190px;
+      }
+      #words {
+        position: absolute;
+        color: #fff;
+        top: 704px;
+        left: 214px;
+        font-family: 'Comic Sans MS';
+        opacity: 0;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div id="face">
+    <img src="face1.jpg" />
+    <img src="mouth.png" id="mouth" />
+    <div id="words">
+      Leigh's magical website of <br>weiners and dongs
+    </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $('#mouth').animate({
+        top: '+=180'
+      }, 3000, function(){
+        $('#words').animate({
+          opacity: '1.0'
+        }, 500, function(){
+        })
+      });
+      
+    </script>
+  </body>
+</html>
