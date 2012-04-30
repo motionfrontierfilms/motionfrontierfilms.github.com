@@ -7,7 +7,7 @@
         background: black;
         color: white;
         width: 600px;
-        margin: 100px auto;
+        margin: 0 auto;
         font-size: 20px;
         text-align: center;
         font-family: 'Georgia'
@@ -15,12 +15,92 @@
       h1 {
         padding-bottom: 30px;
       }
+      #face { 
+        position: relative;
+      }
+      #mouth {
+        position: absolute;
+        top: 389px;
+        left: 190px;
+      }
+      #video {
+        position: absolute;
+        color: #fff;
+        top: 417px;
+        left: 214px;
+        font-family: 'Comic Sans MS';
+        opacity: 0;
+      }
+      #brow-left { 
+        position: absolute;
+        top: 58px;
+        left: 80px;
+      }
+      #brow-right { 
+        position: absolute;
+        top: 45px;
+        left: 329px;
+      }
     </style>
   </head>
   <body>
-    <h1>Motion Frontier Films</h1>
-    <p>
-      Site's on the way
-    </p>
+    <div id="face">
+    <img src="face2.jpg" />
+    <img src="mouth.png" id="mouth" />
+    <img src="brow-left.png" id="brow-left" />
+    <img src="brow-right.png" id="brow-right" />
+    <video id="video" poster="movie.jpg" loop>
+      <source src="website-vid.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+      <p>Failed to load video, <a href="website-vid.mp4">Download it</a></p>
+    </video>
+    <audio id="audio" preload="auto" autobuffer> 
+      <source src="ugh.mp3" />
+    </audio>
+
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      
+      function awesome(){ 
+        // $("html, body").animate({ scrollTop: $(document).height() }, 500);
+        
+        document.getElementById('audio').play();
+        $('#mouth').animate({
+          top: '+=180'
+        }, 3000, function(){
+          $('#video').animate({
+            opacity: '1.0'
+          }, 500, function(){
+            document.getElementById('video').play();
+          })
+        });
+      }
+      setTimeout('awesome()', 1500);
+
+      var direction = true;
+      function brows(){
+        var dir = (direction) ? '-' : '+';
+        $('#brow-left').animate({
+          top: dir + '=30',
+        }, 500, function(){
+          direction = !direction;
+          brows();
+        });
+      }
+      brows();
+
+      var rdirection = true;
+      function browsr(){
+        var dir = (rdirection) ? '-' : '+';
+        $('#brow-right').animate({
+          top: dir + '=30',
+        }, 700, function(){
+          rdirection = !rdirection;
+          browsr();
+        });
+      }
+      browsr();
+      
+    </script>
   </body>
 </html>
