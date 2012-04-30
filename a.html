@@ -44,14 +44,18 @@
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript">
-      $('#mouth').animate({
-        top: '+=180'
-      }, 3000, function(){
-        $('#words').animate({
-          opacity: '1.0'
-        }, 500, function(){
-        })
-      });
+      
+      function awesome(){ 
+        $('#mouth').animate({
+          top: '+=180'
+        }, 3000, function(){
+          $('#words').animate({
+            opacity: '1.0'
+          }, 500, function(){
+          })
+        });
+      }
+      setTimeout('awesome()', 1500);
       
     </script>
   </body>
