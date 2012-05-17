@@ -1105,6 +1105,7 @@ body {
 @media (max-width: 767px) {
   body {
     font-size: 14px;
+    line-height: 18px;
     word-wrap: break-word;
   }
 }
