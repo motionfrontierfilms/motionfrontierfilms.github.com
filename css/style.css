@@ -1125,6 +1125,12 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 767px) {
+  .container {
+    padding: 10px;
+  }
+}
+
 .container p,
 .container .video {
   text-align: center;
