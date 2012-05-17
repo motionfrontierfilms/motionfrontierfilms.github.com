@@ -18,6 +18,14 @@ body {
         word-wrap: break-word;
     }
 }
+a {
+    display: inline-block;
+    border-bottom: 1px solid @white;
+    margin-bottom: 1px;
+}
+a:hover {
+    text-decoration: none;
+}
 
 .logo {
     text-align: center;
@@ -35,9 +43,8 @@ body {
     }
     margin-bottom: 20px;
     background-color:rgba(0,0,0,0.2);
-    p, .video {
-        text-align: center;
-    }
+    text-align: center;
+
     @media (max-width: 540px) {
         br {
             display: none;
@@ -50,10 +57,18 @@ footer {
     position: relative;
 }
 
+.site {
+    padding-bottom: 5px;
+}
+
 .contact {
 }
 
 .contact-left {
+    text-align: left;
+    @media (max-width: 599px) {
+        text-align: center;
+    }
 }
 .contact-right {
     margin-top: 10px;
@@ -65,12 +80,14 @@ footer {
     }
 }
 
-
 .vcard {
     @small-size: 14px;
     .tel, .email {
         font-size: @small-size;
         line-height: @small-size * 1.2;
+        @media (max-width: 767px){
+            margin: 3px 0;
+        }
     }
 }
 

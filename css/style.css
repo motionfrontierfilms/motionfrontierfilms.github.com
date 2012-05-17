@@ -1110,6 +1110,16 @@ body {
   }
 }
 
+a {
+  display: inline-block;
+  margin-bottom: 1px;
+  border-bottom: 1px solid #ffffff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .logo {
   margin-bottom: 20px;
   text-align: center;
@@ -1123,6 +1133,7 @@ body {
   max-width: 680px;
   padding: 20px;
   margin-bottom: 20px;
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -1130,11 +1141,6 @@ body {
   .container {
     padding: 10px;
   }
-}
-
-.container p,
-.container .video {
-  text-align: center;
 }
 
 @media (max-width: 540px) {
@@ -1146,6 +1152,20 @@ body {
 footer {
   position: relative;
   margin-top: 60px;
+}
+
+.site {
+  padding-bottom: 5px;
+}
+
+.contact-left {
+  text-align: left;
+}
+
+@media (max-width: 599px) {
+  .contact-left {
+    text-align: center;
+  }
 }
 
 .contact-right {
@@ -1165,6 +1185,13 @@ footer {
 .vcard .email {
   font-size: 14px;
   line-height: 16.8px;
+}
+
+@media (max-width: 767px) {
+  .vcard .tel,
+  .vcard .email {
+    margin: 3px 0;
+  }
 }
 
 .video-container {
