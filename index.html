@@ -3,169 +3,98 @@
   <head>
     <meta charset="utf-8">
     <title>Motion Frontier Films</title>
-    <meta name="viewport" content="width=device-width">
-    <style>
-      /* bootstrap reset */
-      article,
-      aside,
-      details,
-      figcaption,
-      figure,
-      footer,
-      header,
-      hgroup,
-      nav,
-      section {
-        display: block;
-      }
 
-      audio,
-      canvas,
-      video {
-        display: inline-block;
-        *display: inline;
-        *zoom: 1;
-      }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.min.css" rel="stylesheet">
 
-      audio:not([controls]) {
-        display: none;
-      }
+    <meta name="description" content="Motion Frontier Films is an independent production company located in Vancouver, Canada.">
 
-      html {
-        font-size: 100%;
-        -webkit-text-size-adjust: 100%;
-            -ms-text-size-adjust: 100%;
-      }
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-      a:focus {
-        outline: thin dotted #333;
-        outline: 5px auto -webkit-focus-ring-color;
-        outline-offset: -2px;
-      }
+    <!-- typekit -->
+    <script type="text/javascript" src="http://use.typekit.com/ihq6tlw.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
 
-      a:hover,
-      a:active {
-        outline: 0;
-      }
+    <header>
+      <div class="logo">
+        <h1>
+          <img src="/img/motion-frontier-films-logo.png" alt="Motion Frontier Films Logo" />
+        </h1>
+      </div>
+    </header>
 
-      sub,
-      sup {
-        position: relative;
-        font-size: 75%;
-        line-height: 0;
-        vertical-align: baseline;
-      }
+    <div class="container">
+      <p>
+       We're currently working on our site. In the mean time,
+       <br>
+       please enjoy this teaser for "Polite With Strangers"
+       <br>
+       a short we have in the works for Summer 2012.
+      </p>
 
-      sup {
-        top: -0.5em;
-      }
+      <div class="video-wrapper">
+        <div class="video-container">
+          <iframe src="http://player.vimeo.com/video/42193182" width="680" height="380" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+      </div>
 
-      sub {
-        bottom: -0.25em;
-      }
 
-      img {
-        max-width: 100%;
-        vertical-align: middle;
-        border: 0;
-        -ms-interpolation-mode: bicubic;
-      }
+      <p>
+        We're at the Cannes Film Festival now promoting our previous
+        <br>
+        short film <strong>&ldquo;Mr. Lamaze's Dire Love&rdquo;</strong>.
+        <br>
+        For more info, please check out these sites:
+      </p>
 
-      button,
-      input,
-      select,
-      textarea {
-        margin: 0;
-        font-size: 100%;
-        vertical-align: middle;
-      }
+      <p>
+        <a href="http://www.direlove.wordpress.com" title="Mr. Lamaze's Dire Love Crew Blog">
+          www.direlove.wordpress.com
+        </a>
+        <br>
+        <a href="http://www.imdb.com/title/tt2140161" title="Mr. Lamaze's Dire Love on IMDB">
+          www.imdb.com/title/tt2140161
+        </a>
+      </p>
 
-      button,
-      input {
-        *overflow: visible;
-        line-height: normal;
-      }
+      <footer>
+        <p>
+          Motion Frontier Films is an independent production<br>
+          company located in Vancouver, Canada.<br>
+          For more information please contact
+        </p>
 
-      button::-moz-focus-inner,
-      input::-moz-focus-inner {
-        padding: 0;
-        border: 0;
-      }
+        <!-- Leigh -->
+        <div class="vcard contact contact-left">
+          <div class="fn">Leigh O'Neill</div>
+          <div class="title">Owner</div>
+          <div class="org visuallyhidden">Motion Frontier Films</div>
+          <div><a class="tel" href="tel:1-778-788-0662">+1-778-788-0662</a></div>
+          <div class="email">
+            <a href="mailto:leigho@motionfrontierfilms.com">
+              leigho@motionfrontierfilms.com
+            </a>
+          </div>
+        </div>
 
-      button,
-      input[type="button"],
-      input[type="reset"],
-      input[type="submit"] {
-        cursor: pointer;
-        -webkit-appearance: button;
-      }
+        <!-- Andy -->
+        <div class="vcard contact contact-right">
+          <div class="fn">Andrea Weikert</div>
+          <div class="org visuallyhidden">Motion Frontier Films</div>
+          <div><a class="tel" href="tel:1-778-628-5863">+1-778-628-5863</a></div>
+          <div class="email">
+            <a href="mailto:andrea@motionfrontierfilms.com">andrea@motionfrontierfilms.com</a>
+          </div>
+        </div>
+      </footer>
+    </div>
 
-      input[type="search"] {
-        -webkit-box-sizing: content-box;
-           -moz-box-sizing: content-box;
-                box-sizing: content-box;
-        -webkit-appearance: textfield;
-      }
-
-      input[type="search"]::-webkit-search-decoration,
-      input[type="search"]::-webkit-search-cancel-button {
-        -webkit-appearance: none;
-      }
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        margin: 0;
-        font-family: inherit;
-        font-weight: bold;
-        color: #ddd;
-        text-rendering: optimizelegibility;
-      }
-
-      textarea {
-        overflow: auto;
-        vertical-align: top;
-      }
-      body { 
-        font-family: "Helvetica";
-        background-color: #000;
-        color: #ddd;
-        margin: 0;
-        font-size: 14px;
-        line-height: 18px;
-      }
-      .container {
-        width: 500px;
-        margin: 0 auto;
-        margin-bottom: 40px;
-        padding: 0 30px;
-      }
-      .mff {
-        text-align: center;
-        font-size: 140px;
-        padding: 20px 0;
-        text-align: center;
-      }
-      .content { 
-        text-align: center;
-      }
-      .org {
-        display: none;
-      }
-      a { 
-        color: #ddd;
-      }
-      h3 {
-        margin: 10px 0;
-      }
-      .vcard {
-        margin: 10px 0;
-      }
-    </style>
     <script type="text/javascript">
-
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-31277880-1']);
       _gaq.push(['_trackPageview']);
@@ -175,57 +104,6 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-
-    </script>
-
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mff">
-        <img src="motion-frontier-films-logo.png" alt="Motion Frontier Films" />
-      </h1>
-      <div class="content">
-        <p>
-         We're currently working on our site. In the mean time, please enjoy this teaser for "Polite With Strangers", a short we have in the works for Summer 2012.
-        </p>
-
-        <p>
-          Motion Frontier Films is an independent film company in Vancouver, British Columbia. 
-        </p>
-      </div>
-      <!--
-      <div class="video">
-        <iframe src="http://player.vimeo.com/video/41700765" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-      </div>
-      -->
-      <div class="content">
-        <h3>Contact Us</h3>
-
-        <div class="vcard">
-          <div class="fn">Leigh O'Neill</div>
-          <div class="org">Motion Frontier Films</div>
-          <div><a class="tel" href="tel:1-778-788-0662">+1-778-788-0662</a></div>
-          <div class="email">
-            <a href="mailto:leigho@motionfrontierfilms.com">
-              leigho@motionfrontierfilms.com
-            </a>
-          </div>
-        </div>
-
-        <div class="vcard">
-          <div class="fn">Andrea Weikert</div>
-          <div class="org">Motion Frontier Films</div>
-          <div><a class="tel" href="tel:1-778-628-5863">+1-778-628-5863</a></div>
-          <div class="email">
-            <a href="mailto:andrea.luellen.weikert@gmail.com">andrea.luellen.weikert@gmail.com</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript">
-      
     </script>
   </body>
 </html>
