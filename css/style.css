@@ -1102,6 +1102,13 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+    word-wrap: break-word;
+  }
+}
+
 .logo {
   margin-bottom: 20px;
   text-align: center;
