@@ -1,6 +1,4 @@
-
 // Motion Frontier Films Styles
-
 
 body {
     text-transform: uppercase;
@@ -41,6 +39,7 @@ a:hover {
     @media (max-width: 767px){
         padding: 10px;
     }
+
     margin-bottom: 20px;
     background-color:rgba(0,0,0,0.2);
     text-align: center;
@@ -72,11 +71,14 @@ footer {
 }
 .contact-right {
     margin-top: 10px;
-    @media (min-width: 600px) {
-        text-align: right;
-        position:absolute;
-        bottom: 0;
-        right: 0;
+    text-align: right;
+    position:absolute;
+    bottom: 0;
+    right: 0;
+
+    @media (max-width: 600px) {
+        position: static;
+        text-align: center;
     }
 }
 

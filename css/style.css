@@ -1169,15 +1169,17 @@ footer {
 }
 
 .contact-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
   margin-top: 10px;
+  text-align: right;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .contact-right {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    text-align: right;
+    position: static;
+    text-align: center;
   }
 }
 
